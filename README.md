@@ -138,4 +138,3 @@ If you find this work or datasets helpful, please cite
 ```
 @ARTICLE{9361130,  author={I. D. {Miller} and A. {Cowley} and R. {Konkimalla} and S. S. {Shivakumar} and T. {Nguyen} and T. {Smith} and C. J. {Taylor} and V. {Kumar}},  journal={IEEE Robotics and Automation Letters},   title={Any Way You Look at It: Semantic Crossview Localization and Mapping With LiDAR},   year={2021},  volume={6},  number={2},  pages={2397-2404},  doi={10.1109/LRA.2021.3061332}}
 ```
-
