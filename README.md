@@ -5,6 +5,7 @@ This is the associated code and dataset repository for our paper
 I. D. Miller et al., "Any Way You Look at It: Semantic Crossview Localization and Mapping With LiDAR," in IEEE Robotics and Automation Letters, vol. 6, no. 2, pp. 2397-2404, April 2021, doi: 10.1109/LRA.2021.3061332.
 
 See also our accompanying video
+
 [![XView demo video](http://img.youtube.com/vi/_qwAoYK9iGU/0.jpg)](http://www.youtube.com/watch?v=_qwAoYK9iGU "Any Way You Look At It: Semantic Crossview Localization and Mapping with LiDAR")
 
 ## Compilation
@@ -136,5 +137,13 @@ We provide a launch file for KITTI and for our datasets.  To run, simply launch 
 If you find this work or datasets helpful, please cite
 
 ```
-@ARTICLE{9361130,  author={I. D. {Miller} and A. {Cowley} and R. {Konkimalla} and S. S. {Shivakumar} and T. {Nguyen} and T. {Smith} and C. J. {Taylor} and V. {Kumar}},  journal={IEEE Robotics and Automation Letters},   title={Any Way You Look at It: Semantic Crossview Localization and Mapping With LiDAR},   year={2021},  volume={6},  number={2},  pages={2397-2404},  doi={10.1109/LRA.2021.3061332}}
+@ARTICLE{9361130,
+author={I. D. {Miller} and A. {Cowley} and R. {Konkimalla} and S. S. {Shivakumar} and T. {Nguyen} and T. {Smith} and C. J. {Taylor} and V. {Kumar}},
+journal={IEEE Robotics and Automation Letters},
+title={Any Way You Look at It: Semantic Crossview Localization and Mapping With LiDAR},
+year={2021},
+volume={6},
+number={2},
+pages={2397-2404},
+doi={10.1109/LRA.2021.3061332}}
 ```
