@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <node pkg="tf2_ros" type="static_transform_publisher" name="gt"
+    args="0 0 0 0 0 0 husky/TrueState husky/base"/> 
+
+  <node name="cross_view_slam" pkg="cross_view_slam" type="cross_view_slam_node" output="screen">
+    <remap from="~/pc" to="/kitti/velo/pointcloud_sem"/>
+    <remap from="~/motion_prior" to="/kitti/oxts/pose"/>
+
+    <param name="raster_res" value="1"/>
+    
+    <param name="use_raster" value="True"/>
+    <param name="map_path" value="$(find cross_view_slam)/maps/kitti9"/>
+    <!--param name="svg_res" value="3.0671"/--> <!--kitti0-->
+    <!--param name="svg_res" value="1.627"/--> <!--kitti2-->
+    <param name="svg_res" value="2.905"/> <!--kitti9-->
+    <param name="svg_origin_x" value="0"/>
+    <param name="svg_origin_y" value="0"/>
+    <param name="use_motion_prior" value="True"/>
+
+    <param name="num_particles" value="20000"/> <!--20000 for the paper-->
+    <param name="filter_pos_cov" value="0.15"/>
+    <param name="filter_theta_cov" value="0.004"/> <!-- normally 0.004 -->
+    <param name="filter_regularization" value="0.3"/> <!-- 0.3 known scale, 0.15 unknown -->
+  </node>
+
+  <node pkg="tf2_ros" type="static_transform_publisher" name="world_map" args="0 0 0 0 0 0 1 world map" />
+</launch>
