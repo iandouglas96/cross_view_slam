@@ -1,3 +1,6 @@
+# NOTE: This repository is outdated
+It is archived to preserve the code as it was at the time of the release of the paper referenced below.  However, for a more up-to-date version, please see [this repo](https://github.com/KumarRobotics/top_down_renderer).
+
 # Cross View SLAM
 
 This is the associated code and dataset repository for our paper
